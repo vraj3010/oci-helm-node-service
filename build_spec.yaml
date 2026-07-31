@@ -100,7 +100,7 @@ steps:
     name: "Build container image"
     command: |
       cd ${OCI_WORKSPACE_DIR}/node_express
-      docker build --pull --rm -t iad-dop-lab18-1-ocir-1/node-service-<userID> .
+      docker build --pull --rm -t demo-repo .
 
 outputArtifacts:
   - name: APPLICATION_DOCKER_IMAGE
